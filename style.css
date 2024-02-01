@@ -1,0 +1,291 @@
+@font-face {
+    font-family: imortel;
+    src: url(fonts/Immortel\ -\ Infra\ Italic\ Variable-205TF.ttf);
+}
+@font-face {
+    font-family: imortel;
+    src: url(fonts/Immortel\ -\ Infra\ Median\ Variable-205TF.ttf);
+}
+@font-face {
+    font-family: imortel;
+    src: url(fonts/Immortel\ -\ Infra\ Roman\ Variable-205TF.ttf);}
+    
+@font-face {
+        font-family: karrik;
+        src: url(fonts/Karrik-Italic.otf);
+}
+@media (min-width:500px){
+.col { 
+    width: 50%;
+}
+.abs {position: absolute;
+right: 0px;
+top: 0px;}
+}
+h1 {
+    font-size: 125px;
+    position: fixed;
+    transform: rotate(-90deg);
+color: white;
+min-width: auto;
+margin-left: 75vw;
+margin-right: 5vw;
+margin-top: 20vw;
+
+font-family: karrik;
+z-index: 2; /* Pour placer le contenu au-dessus de l'image */}
+
+    body {
+    margin: 0
+    ;
+}
+h3 {
+font-size: 25px;
+position: fixed;
+transform: rotate(-90deg);
+color: white;
+min-width: auto;
+left: 84vw;
+right: 5vw;
+top: 50vw;
+
+font-family: karrik;
+z-index: 2; /* Pour placer le contenu au-dessus de l'image */}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Utilisation de toute la hauteur de la fenêtre */
+    z-index: 2; /* Pour placer le contenu au-dessus de l'image */
+    position: relative; /* Assurez-vous que le contenu ne sort pas du conteneur parent */
+    padding: 20px; /* Ajoutez un peu de marge intérieure pour éviter que le contenu ne se chevauche avec l'image */
+   }
+.bling-image {
+    position: fixed;
+    margin-top: 0;
+    left: 10%;
+   margin-bottom:0;
+    animation: moveBling 6s infinite;
+    width: 30%;
+}
+
+
+
+@keyframes moveBling {
+    0% {
+        transform: translate(100, 0);
+
+    }
+    50% {
+        transform: rotate(0,30)
+    
+    }
+    100% {
+        transform: translate(100, 0);
+     
+    }
+}
+
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#prem_partie { color: rgb(244, 249, 244);
+    position: relative;
+text-align: left;
+font-size: 100px;
+font-style: italic;
+margin-right: 18%;
+margin-left: 3%;}
+
+
+
+#leparagraphedelamort { color: rgb(244, 249, 244);
+    position: relative;
+text-align: justify;
+margin-top: 40vh;
+font-size: 200px;
+font-style: italic;
+margin-left: 10vw;}
+
+.gauche {
+    text-align: right;
+}
+body {
+ background: linear-gradient(to left, lime 28px, red 77%, cyan);
+      }
+      
+.sticky {position: sticky;}
+
+a {color: white;}
+
+.survol span {
+    width:300px;
+    height: 700px;
+    font-size: 40px;
+    display: inline-block;
+    visibility: hidden;
+    position: fixed;
+    top: 20%;
+    right: 3%;
+    font-family: karrik;
+    text-align: center;
+  line-height: 1.5; /* Ajustez cette valeur selon vos préférences */
+  margin: 0 auto; /* Centrer le bloc de texte horizontalement */
+  max-width: 600px;
+ 
+}
+
+.survol:hover span {
+    visibility: visible;
+    font-style: normal;
+    display: inline-block;
+    animation: rotateLetters 1s forwards; 
+}
+
+
+.survol:hover span img {
+    visibility: visible;
+    width: 100%;
+    
+}
+.image-span {
+    position: fixed;
+    top: 100px; /* Ajustez la position verticale selon vos besoins */
+    right: 100px; /* Ajustez la position horizontale selon vos besoins */
+    background-image: url('img/memoire1.png'); /* URL de votre image */
+    background-size: cover;
+    animation: moveAndRotate 10s infinite;
+    width: 500px; /* Ajustez la largeur de l'image selon vos besoins */
+    height: 700px; /* Ajustez la hauteur de l'image selon vos besoins */
+    display: inline-block; /* Pour que la balise span occupe de l'espace */
+    z-index: 999; /* Pour superposer l'image sur le texte */
+}
+
+@keyframes moveAndRotate {
+    0% {
+      transform: translateY(100%) rotate(0deg);
+    }
+    50% {transform: translateX(-300%) rotate(3turn);}
+    
+    90% {
+      transform: translateY(-100%) rotate(7turn);
+    }
+    100% {
+        position: fixed;
+        top: 0px;
+      }
+  }
+  
+  .image-animation {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveAndRotate 15s forwards; /* Vous pouvez ajuster la durée et le timing de l'animation selon vos préférences */
+  }
+
+
+  .container2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #animatedImage {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 1s ; /* Animation de transition */
+}
+.animate {
+    top: 0 !important;
+    animation: moveUp 5s infinite; /* Animation infinie */
+  }
+  
+  @keyframes moveUp {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 50vh; /* Déplace l'image à la moitié de la hauteur de la fenêtre */
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+  #container3 {
+    position: relative;
+    width: 100%;
+    height: 300vh;
+    overflow: hidden;
+}
+
+marquee {
+    color: rgb(30, 30, 30);
+height: 40vh;
+width: 100vw;
+    top: 0%;
+    position: fixed;
+}
+marquee img {
+   width: 120vw;
+   height: 40vh;
+}
+
+#block {
+    position: fixed;
+    bottom: 10vw;
+    left: 5vw;
+    right: 70vw;
+    color: black;
+    font-size: 20px;
+    font-family: karrik;
+    z-index: 999;
+}
+
+.truc {
+    position: absolute;
+    max-width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+}
+
+
+@keyframes blink2 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-span2{
+    position: fixed;
+    top: 100px; /* Ajustez la position verticale selon vos besoins */
+    right: 100px; /* Ajustez la position horizontale selon vos besoins */
+    background-image: url('img/memoire_2.png'); /* URL de votre image */
+    background-size: cover;
+    animation: moveAndRotate 10s infinite;
+    width: 500px; /* Ajustez la largeur de l'image selon vos besoins */
+    height: 700px; /* Ajustez la hauteur de l'image selon vos besoins */
+    display: inline-block; /* Pour que la balise span occupe de l'espace */
+    z-index: 999; /* Pour superposer l'image sur le texte */}
