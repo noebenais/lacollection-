@@ -114,7 +114,7 @@ margin-left: 3%;}
 #leparagraphedelamort { color: rgb(244, 249, 244);
     position: relative;
 text-align: justify;
-margin-top: 40vh;
+margin-top: 0vh;
 font-size: 200px;
 font-style: italic;
 margin-left: 10vw;}
@@ -240,7 +240,7 @@ marquee {
 height: 40vh;
 width: 100vw;
     top: 0%;
-    position: fixed;
+    position: relative;
 }
 marquee img {
    width: 120vw;
